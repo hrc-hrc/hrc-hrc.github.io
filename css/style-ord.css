@@ -10,7 +10,11 @@ body {
 	height: 100%;
 }
 
-
+#wp {
+    color: white;
+    text-align: center;
+    margin-left: -25px;
+}
 /* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
 
 .index_item1_bg_blug {
@@ -123,7 +127,8 @@ body {
 
 .head_nav dl dd {
 	display: block;
-	width: 100%;
+    /* width: 100%; */
+    margin-right: 2em;
 }
 
 .head_nav dl dd a {
@@ -1429,7 +1434,7 @@ body {
 		/* OLD - iOS 6-, Safari 3.1-6 */
 		-moz-box-flex: 1;
 		/* OLD - Firefox 19- */
-		width: 20%;
+		width: 10%;
 		/* For old syntax, otherwise collapses. */
 		-webkit-flex: 1;
 		/* Chrome */
@@ -1443,23 +1448,31 @@ body {
 		display: none;
 	}
 	.head_nav {
-		flex: 4;
-		-webkit-box-flex: 4;
+		flex: 9;
+		-webkit-box-flex: 9;
 		/* OLD - iOS 6-, Safari 3.1-6 */
-		-moz-box-flex: 4;
+		-moz-box-flex: 9;
 		/* OLD - Firefox 19- */
-		width: 80%;
+		width: 90%;
 		/* For old syntax, otherwise collapses. */
-		-webkit-flex: 4;
+		-webkit-flex: 9;
 		/* Chrome */
-		-ms-flex: 4;
+		-ms-flex: 9;
 		/* IE 10 */
-		flex: 4;
+		flex: 9;
 		/* NEW, Spec - Opera 12.1, Firefox 20+ */
 		display: block;
 		background-color: transparent;
 		color: #6d6d6d;
-	}
+    }
+    #wp {
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        color: rgb(109, 109, 109);
+        top: 15px;
+        right: 15px;
+    }
 	.head_nav dl {
 		display: box;
 		/* OLD - Android 4.4- */
@@ -1467,28 +1480,28 @@ body {
 		/* OLD - iOS 6-, Safari 3.1-6 */
 		display: -moz-box;
 		/* OLD - Firefox 19- (buggy but mostly works) */
-		display: -ms-flexbox;
+		/* display: -ms-flexbox; */
 		/* TWEENER - IE 10 */
-		display: -webkit-flex;
+		/* display: -webkit-flex; */
 		/* NEW - Chrome */
-		display: flex;
+		/* display: flex; */
 		/* NEW, Spec - Opera 12.1, Firefox 20+ */
 		padding: 0;
 		margin: 0;
 	}
 	.head_nav dl dd {
-		flex: 1;
-		-webkit-box-flex: 1;
+		/* flex: 1; */
+		/* -webkit-box-flex: 1; */
 		/* OLD - iOS 6-, Safari 3.1-6 */
-		-moz-box-flex: 1;
+		/* -moz-box-flex: 1; */
 		/* OLD - Firefox 19- */
-		width: 20%;
+		/* width: 20%; */
 		/* For old syntax, otherwise collapses. */
-		-webkit-flex: 1;
+		/* -webkit-flex: 1; */
 		/* Chrome */
-		-ms-flex: 1;
+		/* -ms-flex: 1; */
 		/* IE 10 */
-		flex: 1;
+		/* flex: 1; */
 		/* NEW, Spec - Opera 12.1, Firefox 20+ */
 	}
 	.head_nav dl dd a {
