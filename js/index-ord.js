@@ -221,8 +221,8 @@ $(function() {
 		var mySwiperItem7 = new Swiper('.item7_swiper', {
 			autoplay: 5000,
 			//				loop: true,
-			slidesPerView: 4,
-			slidesPerGroup: 4,
+			slidesPerView: 2,
+			// slidesPerGroup: 4,
 			autoplayDisableOnInteraction: false,
 			grabCursor: true,
 
@@ -250,8 +250,8 @@ $(function() {
 		var mySwiperItem8 = new Swiper('.item8_swiper', {
 			autoplay: 5000,
 			//				loop: true,
-			slidesPerView: 4,
-			slidesPerGroup: 4,
+			slidesPerView: 2,
+			// slidesPerGroup: 4,
 			autoplayDisableOnInteraction: false,
 			grabCursor: true,
 
