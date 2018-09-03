@@ -472,54 +472,55 @@ $(function() {
 		window.addEventListener('resize', onWindowResize, false);
 
 		//////////////////////////////////////////////////////
-		$('.index_item1_bg_blug').append('<div id="sky-particle"></div>');
-		particlesJS('sky-particle', {
-			particles: {
-			color: '#fff',
-			shape: 'circle', // "circle", "edge" or "triangle"
-			opacity: 1,
-			size: 4,
-			size_random: true,
-			nb: 100,
-			line_linked: {
-				enable_auto: true,
-				distance: 150,
+		if (my_equipment != 2) {
+			$('.index_item1_bg_blug').append('<div id="sky-particle"></div>');
+			particlesJS('sky-particle', {
+				particles: {
 				color: '#fff',
+				shape: 'circle', // "circle", "edge" or "triangle"
 				opacity: 1,
-				width: 1,
-				condensed_mode: {
-				enable: false,
-				rotateX: 600,
-				rotateY: 600
+				size: 4,
+				size_random: true,
+				nb: 100,
+				line_linked: {
+					enable_auto: true,
+					distance: 150,
+					color: '#fff',
+					opacity: 1,
+					width: 1,
+					condensed_mode: {
+					enable: false,
+					rotateX: 600,
+					rotateY: 600
+					}
+				},
+				anim: {
+					enable: true,
+					speed: 1
 				}
-			},
-			anim: {
+				},
+				interactivity: {
 				enable: true,
-				speed: 1
-			}
-			},
-			interactivity: {
-			enable: true,
-			mouse: {
-				distance: 250
-			},
-			detect_on: 'canvas', // "canvas" or "window"
-			mode: 'grab',
-			line_linked: {
-				opacity: .5
-			},
-			events: {
-				onclick: {
-				enable: true,
-				mode: 'push', // "push" or "remove" (particles)
-				nb: 4
+				mouse: {
+					distance: 250
+				},
+				detect_on: 'canvas', // "canvas" or "window"
+				mode: 'grab',
+				line_linked: {
+					opacity: .5
+				},
+				events: {
+					onclick: {
+					enable: true,
+					mode: 'push', // "push" or "remove" (particles)
+					nb: 4
+					}
 				}
-			}
-			},
-			/* Retina Display Support */
-			retina_detect: true
-		});
-
+				},
+				/* Retina Display Support */
+				retina_detect: true
+			});
+		}
 		///////////////////////////////////////////////////////
 	}
 
