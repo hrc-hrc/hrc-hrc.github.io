@@ -414,7 +414,6 @@ $(function() {
 	init();
 	animate();
 	
-
 	function init() {
 
 		container = document.createElement('div');
